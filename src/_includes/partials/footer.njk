@@ -1,13 +1,19 @@
-<div class="">
-
-  <footer class="py-4 mt-auto" id="footer-main">
-    <br>
-    <br>
-    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-4 text-light fs-5 fw-normal">
-      <div class="">
+<div>
+  <footer class="py-2 mt-auto" id="footer-main">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-4 fs-5 fw-normal">
+      <div>
         © {{ global.currentYear }}
-        <a href="/" class="text-decoration-none text-light">{{ site.title }}</a>
+        <a href="/" class="text-decoration-none link-body-emphasis">{{ site.title }}</a>
       </div>
+
+      <button
+        class="btn btn-outline-light"
+        type="button"
+        onclick="toggleTheme()"
+        aria-label="Toggle dark/light mode"
+      >
+        <i id="theme-icon" class="bi bi-moon-fill"></i>
+      </button>
     </div>
   </footer>
 </div>
