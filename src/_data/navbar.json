@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Home",
+    "href": "/",
+    "footer": true
+  },
+  {
+    "title": "Menu",
+    "href": "/menu",
+    "footer": true
+  }
+]

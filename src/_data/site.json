@@ -1,0 +1,9 @@
+{
+  "title": "Vinny's Eatery",
+  "description": "Vinny's Eatery is a popular Vietnamese café and casual eatery in Melbourne’s Docklands, known for fresh banh mi, hearty pho, and flavourful Vietnamese-style breakfast and lunch dishes in a relaxed setting.",
+  "logo": "/assets/images/logo.svg",
+  "favicon": "/assets/images/favicon.svg",
+  "baseUrl": "/",
+  "timezone": "Australia/Sydney",
+  "dateFormat": "dddd, Do MMMM YYYY"
+}

@@ -1,0 +1,34 @@
+{# btn.njk - reusable button partial #}
+
+{# ----- Defaults ----- #}
+{% set align = align | default("center") %}
+{% set style = style | default("primary") %}
+{% set icon = icon | default("arrow-left") %}
+{% set text = text | default("Back to Home") %}
+{% set url = url | default("/") %}
+
+{# ----- Determine button class based on style ----- #}
+{% if style.startsWith("outline") %}
+  {% set btnClass = "btn-" ~ style %}
+{% elif style == "outline" %}
+  {% set btnClass = "btn-outline-primary" %}
+{% else %}
+  {% set btnClass = "btn-" ~ style %}
+{% endif %}
+
+{# ----- Determine alignment class ----- #}
+{% if align == "start" %}
+  {% set alignClass = "justify-content-start" %}
+{% elif align == "end" %}
+  {% set alignClass = "justify-content-end" %}
+{% else %}
+  {% set alignClass = "justify-content-center" %}
+{% endif %}
+
+{# ----- Render Button ----- #}
+<div class="d-flex {{ alignClass }}">
+  <a href="{{ url }}" class="btn {{ btnClass }}">{{- "\n" -}}
+    {%- if icon -%}<i class="bi bi-{{ icon }} me-2"></i>{%- endif -%}{{- "\n" -}}
+    {{- text -}}
+  </a>
+</div>
